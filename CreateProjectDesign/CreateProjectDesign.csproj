@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9642E32-3659-4ACD-8BEC-9C462B97145B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CreateProjectDesign</RootNamespace>
+    <AssemblyName>CreateProjectDesign</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccount.Designer.cs">
+      <DependentUpon>AdminAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomizeDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomizeDesign.Designer.cs">
+      <DependentUpon>CustomizeDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomizeDesignRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomizeDesignRequest.Designer.cs">
+      <DependentUpon>CustomizeDesignRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignerForm.Designer.cs">
+      <DependentUpon>DesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignerRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignerRecord.Designer.cs">
+      <DependentUpon>DesignerRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccountInfo.Designer.cs">
+      <DependentUpon>MyAccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderDetails.Designer.cs">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowAllClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAllClient.Designer.cs">
+      <DependentUpon>ShowAllClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UploadDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadDesign.Designer.cs">
+      <DependentUpon>UploadDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDesign.Designer.cs">
+      <DependentUpon>ViewDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WINFORM_DMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WINFORM_DMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WINFORM_DMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WINFORM_DMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WINFORM_DMDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WINFORM_DMDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAccount.resx">
+      <DependentUpon>AdminAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomizeDesign.resx">
+      <DependentUpon>CustomizeDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomizeDesignRequest.resx">
+      <DependentUpon>CustomizeDesignRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignerForm.resx">
+      <DependentUpon>DesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesignerRecord.resx">
+      <DependentUpon>DesignerRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccountInfo.resx">
+      <DependentUpon>MyAccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDetails.resx">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ShowAllClient.resx">
+      <DependentUpon>ShowAllClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadDesign.resx">
+      <DependentUpon>UploadDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDesign.resx">
+      <DependentUpon>ViewDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WINFORM_DMDataSet.xsc">
+      <DependentUpon>WINFORM_DMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WINFORM_DMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WINFORM_DMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WINFORM_DMDataSet.xss">
+      <DependentUpon>WINFORM_DMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WINFORM_DMDataSet1.xsc">
+      <DependentUpon>WINFORM_DMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WINFORM_DMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WINFORM_DMDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WINFORM_DMDataSet1.xss">
+      <DependentUpon>WINFORM_DMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="WINFORM_DMDataSet2.xsc">
+      <DependentUpon>WINFORM_DMDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="WINFORM_DMDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WINFORM_DMDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WINFORM_DMDataSet2.xss">
+      <DependentUpon>WINFORM_DMDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphic-designer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4051919-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lady-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-preferences-system-login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poster-with-vertical-frames-empty-white-wall-living-room-interior-with-blue-velvet-armchair-3d-rendering_41470-2907.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\233769927_984477738795819_3510052850594418446_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\233769927_984477738795819_3510052850594418446_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewdesign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderlist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\myaccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interio1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cs1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interio2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\myaccount1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderlist1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
